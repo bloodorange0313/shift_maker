@@ -74,21 +74,21 @@ void solve_four(){
       string s;
       s = yatai[i].front();
       yatai[i].pop();
-      cout << s << endl;
+      cout << s << " 希望しないのは"<< M2[s] << endl;
     }
     while(!okunai[i].empty()){
       cout << "屋内希望" << endl;
       string s;
       s = okunai[i].front();
       okunai[i].pop();
-      cout << s << endl;
+      cout << s << " 希望しないのは"<< M2[s] <<  endl;
     }
     while(!okugai[i].empty()){
       cout << "屋外希望" << endl;
       string s;
       s = okugai[i].front();
       okugai[i].pop();
-      cout << s << endl;
+      cout << s << " 希望しないのは"<< M2[s] << endl;
     }
   }
 }

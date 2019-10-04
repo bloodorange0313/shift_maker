@@ -8,8 +8,8 @@
 using namespace std;
 
 string name[105];
-int wanted[105];
-int unwanted[105];
+string wanted[105];
+string unwanted[105];
 int n, m;
 int shift_number[105];
 pair<string, int> person[105];
