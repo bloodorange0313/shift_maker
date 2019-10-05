@@ -37,20 +37,6 @@ void solve_one(){
 
 
 // 今度は、シフトが余っている場合に、ポイントが大きい人から出す。
-void solve_two(){
-  for(int i = 0; i < m; ++i){
-    while(Q[i].size() > shift_number[i]){
-      pair<int, string> nukedashi;
-      nukedashi = Q[i].top();
-      //cout << cnt_kaisu[nukedashi.second] << endl;
-      //cout << nukedashi.first << " " << nukedashi.second << endl;
-      cnt_kaisu[nukedashi.second]--;
-      Q[i].pop();
-      
-    }
-  }
-}
-
 void solve_two_new(){
   for(int i = 0; i < m; ++i){
       while(!Q[i].empty()){
@@ -77,26 +63,6 @@ void solve_two_new(){
 }
 
 // 屋内・屋外・屋台を割り当てる。しかし、複雑なので、希望を可視化するに止める
-void solve_three(){
-  for(int i = 0; i < m; ++i){
-    
-    while(!Q[i].empty()){
-      pair<int, string> s;
-      s = Q[i].top();
-      Q[i].pop();
-      //cout << s.second << endl;
-      if(M1[s.second] == "屋台"){
-        yatai[i].push(s.second);
-        //cout << s.second << endl;
-      }else if(M1[s.second] == "屋内"){
-        okunai[i].push(s.second);
-      }else{
-        okugai[i].push(s.second);
-      }
-    }
-  }
-}
-
 void solve_three_new(){
   for(int i = 0; i < m; ++i){
     for(int j = 0; j < V[i].size(); ++j){
