@@ -19,7 +19,7 @@ int main(){
   }
   //cout << m << endl;
   solve_one();
-  solve_two();
-  solve_five();
+  solve_two_new();
+  solve_five_new();
   return 0;
 }

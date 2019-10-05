@@ -20,9 +20,12 @@ int main(){
   }
   //cout << m << endl;
   solve_one();
-  solve_two();
+  solve_two_new();
   solve_three();
   solve_four();
+
+  //cout << " " << endl;
+  //solve_five();
   
   return 0;
 }
