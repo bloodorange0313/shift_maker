@@ -106,19 +106,6 @@ void solve_four(){
 }
 
 // シフト割り当ての全体の結果を出力
-void solve_five(){
-  for(int i = 0; i < m; ++i){
-    cout << i << "番目のシフトに入ってもいい人" << endl;
-    while(!Q[i].empty()){
-      pair<int, string> s;
-      s = Q[i].top();
-      Q[i].pop();
-      cout << s.second << " " << s.first << endl;
-    }
-  }
-}
-
-
 void solve_five_new(){
   for(int i = 0; i < m; ++i){
     cout << i << "番目のシフト" << endl;
