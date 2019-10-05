@@ -39,6 +39,7 @@ void solve_two(){
     while(Q[i].size() > shift_number[i]){
       pair<int, string> nukedashi;
       nukedashi = Q[i].top();
+      cnt_kaisu[nukedashi.second]--;
       Q[i].pop();
       //cout << nukedashi.second << endl;
     }
