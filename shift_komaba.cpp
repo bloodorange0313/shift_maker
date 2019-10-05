@@ -21,7 +21,7 @@ int main(){
   //cout << m << endl;
   solve_one();
   solve_two_new();
-  solve_three();
+  solve_three_new();
   solve_four();
 
   //cout << " " << endl;

@@ -97,6 +97,20 @@ void solve_three(){
   }
 }
 
+void solve_three_new(){
+  for(int i = 0; i < m; ++i){
+    for(int j = 0; j < V[i].size(); ++j){
+      if(M1[V[i][j].second] == "屋台"){
+        yatai[i].push(V[i][j].second);
+      }else if(M1[V[i][j].second] == "屋内"){
+        okunai[i].push(V[i][j].second);
+      }else{
+        okugai[i].push(V[i][j].second);
+      }
+    }
+  }
+}
+
 void solve_four(){
   for(int i = 0; i < m; ++i){
     cout << i << "番目のシフトに入ってもいい人" << endl;
