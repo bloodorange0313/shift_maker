@@ -1,5 +1,6 @@
 #include "function.h"
 
+
 int main(){
   // 人数とシフトの時間帯の枠の個数をインポート
   cin >> n >> m;

@@ -7,21 +7,21 @@
 
 using namespace std;
 
-string name[105];
-string wanted[105];
-string unwanted[105];
+string name[225];
+string wanted[225];
+string unwanted[225];
 int n, m;
-int shift_number[105];
-pair<string, int> person[105];
+int shift_number[225];
+pair<string, int> person[225];
 unordered_map<string, string>M1, M2; // あとで、wanted, unwantedを決めるために使う
 unordered_map<string, int>cnt_kaisu;
-int able[105][105];
-queue<string>okunai[105], okugai[105], yatai[105];
+int able[225][225];
+queue<string>okunai[225], okugai[225], yatai[225];
 
-priority_queue<pair<int, string> > Q[105];
+priority_queue<pair<int, string> > Q[225];
 
 
-vector<pair<int, string> >V[105];
+vector<pair<int, string> >V[225];
 
 // シフトの入れるところを全てpriority queueに入れる
 void solve_one(){
@@ -112,5 +112,6 @@ void solve_five_new(){
     for(int j = 0; j < V[i].size(); ++j){
       cout << V[i][j].second << endl;
     }
+    cout << endl;
   }
 }
