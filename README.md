@@ -35,3 +35,15 @@ setoka 屋内 屋台 1 0 0
 bloodorange 屋外 屋内 0 1 1
 mikan 屋台 屋内 1 1 1
 ```
+
+例えば、shift1.txtを実行する場合は以下のコマンドを入力します。
+
+```
+./a.out < shift1.txt
+```
+
+また、出力結果をanswer.txtというファイルに保存したい場合は以下のように入力します。
+
+```
+./a.out < shift1.txt > answer.txt
+```
