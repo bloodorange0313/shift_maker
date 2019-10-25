@@ -19,6 +19,7 @@ unordered_map<string, string>M1, M2; // あとで、wanted, unwantedを決める
 unordered_map<string, int>cnt_kaisu;
 int able[225][225];
 queue<string>okunai[225], okugai[225], yatai[225];
+string a, b, c;
 
 priority_queue<pair<int, string> > Q[225];
 
@@ -122,6 +123,7 @@ int main(){
   // 人数とシフトの時間帯の枠の個数をインポート
   cin >> n >> m;
   // シフトの時間に関する情報の入力
+  cin >> a >> b >> c;
   for(int i = 0; i < m; ++i){
     cin >> shift_number[i];
   }
