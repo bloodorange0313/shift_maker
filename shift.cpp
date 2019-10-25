@@ -111,7 +111,8 @@ void solve_four(){
 // シフト割り当ての全体の結果を出力
 void solve_five_new(){
   for(int i = 0; i < m; ++i){
-    cout << i << "番目のシフト" << endl;
+    //cout << i << "番目のシフト" << endl;
+    cout << t[i] << endl;
     for(int j = 0; j < V[i].size(); ++j){
       cout << V[i][j].second << endl;
     }
