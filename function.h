@@ -17,6 +17,7 @@ unordered_map<string, string>M1, M2; // あとで、wanted, unwantedを決める
 unordered_map<string, int>cnt_kaisu;
 int able[225][225];
 queue<string>okunai[225], okugai[225], yatai[225];
+string a, b, c, a1, a2, a3, t[225];
 
 priority_queue<pair<int, string> > Q[225];
 
@@ -79,28 +80,34 @@ void solve_three_new(){
 
 void solve_four(){
   for(int i = 0; i < m; ++i){
-    cout << i << "番目のシフトに入ってもいい人" << endl;
+    //cout << i << "番目のシフトに入ってもいい人" << endl;
+    cout << t[i] << endl;
+    cout << "屋台" << endl;
     while(!yatai[i].empty()){
-      cout << "屋台希望" << endl;
       string s;
       s = yatai[i].front();
       yatai[i].pop();
-      cout << s << " 希望しないのは"<< M2[s] << endl;
+      cout << s << endl;//" 希望しないのは"<< M2[s] << endl;
     }
+    cout << endl;
+    cout << "屋内" << endl;
     while(!okunai[i].empty()){
-      cout << "屋内希望" << endl;
+      
       string s;
       s = okunai[i].front();
       okunai[i].pop();
-      cout << s << " 希望しないのは"<< M2[s] <<  endl;
+      cout << s << endl;//" 希望しないのは"<< M2[s] <<  endl;
     }
+    cout << endl;
+    cout << "どちらでも良い" << endl;
     while(!okugai[i].empty()){
-      cout << "屋外希望" << endl;
+      
       string s;
       s = okugai[i].front();
       okugai[i].pop();
-      cout << s << " 希望しないのは"<< M2[s] << endl;
+      cout << s << endl; //" 希望しないのは"<< M2[s] << endl;
     }
+    cout << endl;
     cout << endl;
   }
 }
@@ -108,7 +115,8 @@ void solve_four(){
 // シフト割り当ての全体の結果を出力
 void solve_five_new(){
   for(int i = 0; i < m; ++i){
-    cout << i << "番目のシフト" << endl;
+    //cout << i << "番目のシフト" << endl;
+    cout << t[i] << endl;
     for(int j = 0; j < V[i].size(); ++j){
       cout << V[i][j].second << endl;
     }

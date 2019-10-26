@@ -82,28 +82,34 @@ void solve_three_new(){
 
 void solve_four(){
   for(int i = 0; i < m; ++i){
-    cout << i << "番目のシフトに入ってもいい人" << endl;
+    //cout << i << "番目のシフトに入ってもいい人" << endl;
+    cout << t[i] << endl;
+    cout << "屋台" << endl;
     while(!yatai[i].empty()){
-      cout << "屋台希望" << endl;
       string s;
       s = yatai[i].front();
       yatai[i].pop();
-      cout << s << " 希望しないのは"<< M2[s] << endl;
+      cout << s << endl;//" 希望しないのは"<< M2[s] << endl;
     }
+    cout << endl;
+    cout << "屋内" << endl;
     while(!okunai[i].empty()){
-      cout << "屋内希望" << endl;
+      
       string s;
       s = okunai[i].front();
       okunai[i].pop();
-      cout << s << " 希望しないのは"<< M2[s] <<  endl;
+      cout << s << endl;//" 希望しないのは"<< M2[s] <<  endl;
     }
+    cout << endl;
+    cout << "どちらでも良い" << endl;
     while(!okugai[i].empty()){
-      cout << "屋外希望" << endl;
+      
       string s;
       s = okugai[i].front();
       okugai[i].pop();
-      cout << s << " 希望しないのは"<< M2[s] << endl;
+      cout << s << endl; //" 希望しないのは"<< M2[s] << endl;
     }
+    cout << endl;
     cout << endl;
   }
 }
@@ -135,6 +141,8 @@ int main(){
   // 各個人のシフトに関する希望を入力
   for(int i = 0; i < n; ++i){
     cin >> name[i] >> wanted[i] >> unwanted[i];
+    M1[name[i]] = wanted[i];
+    M2[name[i]] = unwanted[i];
     //cout << wanted[i] << endl;
     for(int j = 0; j < m; ++j){
       cin >> able[j][i];
@@ -144,6 +152,8 @@ int main(){
   //cout << m << endl;
   solve_one();
   solve_two_new();
-  solve_five_new();
+  solve_three_new();
+  solve_four();
+  //solve_five_new();
   return 0;
 }
