@@ -30,7 +30,8 @@ g++ -std=c++14 -Wall shift_komaba.cpp
 ```
 3
 3
-2 1 1
+null null null 時間1 時間2 時間3
+null null null 2 1 1
 setoka 屋内 屋台 1 0 0
 bloodorange 屋外 屋内 0 1 1
 mikan 屋台 屋内 1 1 1
