@@ -100,6 +100,7 @@ void solve_four(){
     }
     cout << endl;
     cout << "どちらでも良い" << endl;
+    //cout << "屋外" << endl;
     while(!okugai[i].empty()){
       
       string s;

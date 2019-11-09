@@ -91,6 +91,7 @@ void solve_four(){
       yatai[i].pop();
       cout << s << " 希望しないのは"<< M2[s] << endl;
     }
+    cout << endl;
     cout << "屋内希望" << endl;
     while(!okunai[i].empty()){
       string s;
@@ -98,6 +99,7 @@ void solve_four(){
       okunai[i].pop();
       cout << s << " 希望しないのは"<< M2[s] <<  endl;
     }
+    cout << endl;
     cout << "屋外希望" << endl;
     while(!okugai[i].empty()){
       string s;
